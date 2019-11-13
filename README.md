@@ -2,8 +2,8 @@
 
 [![Maintained by Gruntwork.io](https://img.shields.io/badge/maintained%20by-gruntwork.io-%235849a6.svg)](https://gruntwork.io/?ref=repo_terratest)
 [![CircleCI](https://circleci.com/gh/gruntwork-io/terratest.svg?style=svg&circle-token=e48019e09fc3b8bf6e0315a84048501c87c4157c)](https://circleci.com/gh/gruntwork-io/terratest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gruntwork-io/terratest)](https://goreportcard.com/report/github.com/gruntwork-io/terratest)
-[![GoDoc](https://godoc.org/github.com/gruntwork-io/terratest?status.svg)](https://godoc.org/github.com/gruntwork-io/terratest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sbugalski/terratest)](https://goreportcard.com/report/github.com/sbugalski/terratest)
+[![GoDoc](https://godoc.org/github.com/sbugalski/terratest?status.svg)](https://godoc.org/github.com/sbugalski/terratest)
 
 Terratest is a Go library that makes it easier to write automated tests for your infrastructure code. It provides a
 variety of helper functions and patterns for common infrastructure testing tasks, including:
@@ -81,10 +81,10 @@ Terratest uses the Go testing framework. To use terratest, you need to install:
        `modules` folder.
     1. `test`: This folder should contain your terratest code.
 1. Copy the [basic terraform
-   example](https://github.com/gruntwork-io/terratest/tree/master/examples/terraform-basic-example) into the `examples`
+   example](https://github.com/sbugalski/terratest/tree/master/examples/terraform-basic-example) into the `examples`
    folder.
 1. Copy the [basic terraform example
-   test](https://github.com/gruntwork-io/terratest/blob/master/test/terraform_basic_example_test.go) into the `test`
+   test](https://github.com/sbugalski/terratest/blob/master/test/terraform_basic_example_test.go) into the `test`
    folder.
 1. In the `test` folder, run `go mod init MODULE_NAME` to get a new `go.mod` file. Then run `go mod tidy` to download
    terratest.
@@ -108,7 +108,7 @@ Now you should be able to run the example test. To run the test:
 ### Installing the utility binaries
 
 Terratest also ships utility binaries that you can use to improve the debugging experience (see [Debugging interleaved
-test output](#debugging-interleaved-test-output)). The compiled binaries are shipped separately from the library in the [Releases page](https://github.com/gruntwork-io/terratest/releases).
+test output](#debugging-interleaved-test-output)). The compiled binaries are shipped separately from the library in the [Releases page](https://github.com/sbugalski/terratest/releases).
 
 To install a binary, download the version that matches your platform and place it somewhere on your `PATH`. For example
 to install version 0.13.13 of `terratest_log_parser`:
@@ -116,18 +116,18 @@ to install version 0.13.13 of `terratest_log_parser`:
 ```bash
 # This example assumes a linux 64bit machine
 # Use curl to download the binary
-curl --location --silent --fail --show-error -o terratest_log_parser https://github.com/gruntwork-io/terratest/releases/download/v0.13.13/terratest_log_parser_linux_amd64
+curl --location --silent --fail --show-error -o terratest_log_parser https://github.com/sbugalski/terratest/releases/download/v0.13.13/terratest_log_parser_linux_amd64
 # Make the downloaded binary executable
 chmod +x terratest_log_parser
 # Finally, we place the downloaded binary to a place in the PATH
 sudo mv terratest_log_parser /usr/local/bin
 ```
 
-Alternatively, you can use [the gruntwork-installer](https://github.com/gruntwork-io/gruntwork-installer), which will do
+Alternatively, you can use [the gruntwork-installer](https://github.com/sbugalski/gruntwork-installer), which will do
 the above steps and automatically select the right binary for your platform:
 
 ```bash
-gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/gruntwork-io/terratest' --tag 'v0.13.13'
+gruntwork-install --binary-name 'terratest_log_parser' --repo 'https://github.com/sbugalski/terratest' --tag 'v0.13.13'
 ```
 
 The following binaries are currently available with `terratest`:
@@ -200,7 +200,7 @@ modules:
 1.  [Consul](https://github.com/hashicorp/terraform-aws-consul)
 1.  [Vault](https://github.com/hashicorp/terraform-aws-vault)
 1.  [Nomad](https://github.com/hashicorp/terraform-aws-nomad)
-1.  [Couchbase](https://github.com/gruntwork-io/terraform-aws-couchbase/)
+1.  [Couchbase](https://github.com/sbugalski/terraform-aws-couchbase/)
 
 
 
@@ -237,7 +237,7 @@ Terratest's [modules folder](/modules) and how they can help you test different 
 
 ## GoDoc
 
-You can find the GoDoc for Terratest here: https://godoc.org/github.com/gruntwork-io/terratest. This will let you see the methods and types within each package.
+You can find the GoDoc for Terratest here: https://godoc.org/github.com/sbugalski/terratest. This will let you see the methods and types within each package.
 
 
 
@@ -328,7 +328,7 @@ checkServerWorks(t, options)
 
 Of course, despite your best efforts, occasionally cleanup will fail, perhaps due to the CI server going down, or a bug
 in your code, or a temporary network outage. To handle those cases, we run a tool called
-[cloud-nuke](https://github.com/gruntwork-io/cloud-nuke) in our test AWS account on a nightly basis to clean up any
+[cloud-nuke](https://github.com/sbugalski/cloud-nuke) in our test AWS account on a nightly basis to clean up any
 leftover resources.
 
 
@@ -473,13 +473,13 @@ Here are some techniques we use with Docker:
 
 - If your script is used in a Packer template, add a [Docker
   builder](https://www.packer.io/docs/builders/docker.html) to the template so you can create a Docker image from the
-  same code. See the [Packer Docker Example](https://github.com/gruntwork-io/terratest/tree/master/examples/packer-docker-example) for working sample code.
+  same code. See the [Packer Docker Example](https://github.com/sbugalski/terratest/tree/master/examples/packer-docker-example) for working sample code.
 
 - We have prebuilt Docker images for major Linux distros that have many important dependencies (e.g., curl, vim,
   tar, sudo) already installed. See the [test-docker-images folder](/test-docker-images) for more details.
 
 - Create a `docker-compose.yml` to make it easier to run your Docker image with all the ports, environment variables,
-  and other settings it needs. See the [Packer Docker Example](https://github.com/gruntwork-io/terratest/tree/master/examples/packer-docker-example) for working sample code.
+  and other settings it needs. See the [Packer Docker Example](https://github.com/sbugalski/terratest/tree/master/examples/packer-docker-example) for working sample code.
 
 - With scripts in Docker, you can replace _some_ real-world dependencies with mocks! One way to do this is to create
   some "mock scripts" and to bind-mount them in `docker-compose.yml` in a way that replaces the real dependency. For
@@ -627,7 +627,7 @@ go test -timeout 30m -run "<TEST_NAME>"
 ### Versioning
 
 This repo follows the principles of [Semantic Versioning](http://semver.org/). You can find each new release,
-along with the changelog, in the [Releases Page](https://github.com/gruntwork-io/terratest/releases).
+along with the changelog, in the [Releases Page](https://github.com/sbugalski/terratest/releases).
 
 During initial development, the major version will be 0 (e.g., `0.x.y`), which indicates the code does not yet have a
 stable API. Once we hit `1.0.0`, we will make every effort to maintain a backwards compatible API and use the MAJOR,

@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/ghodss/yaml"
-	"github.com/gruntwork-io/gruntwork-cli/errors"
+	"github.com/sbugalski/gruntwork-cli/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terratest/modules/files"
+	"github.com/sbugalski/terratest/modules/files"
 )
 
 // RenderTemplate runs `helm template` to render the template given the provided options and returns stdout/stderr from

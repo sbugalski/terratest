@@ -8,8 +8,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"github.com/gruntwork-io/terratest/modules/retry"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/retry"
 )
 
 // (Deprecated) See the FetchContentsOfFileFromInstance method for a more powerful solution.

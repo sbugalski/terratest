@@ -5,15 +5,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/gruntwork-cli/errors"
+	"github.com/sbugalski/gruntwork-cli/errors"
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/clientcmd/api"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"github.com/gruntwork-io/terratest/modules/retry"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/retry"
 )
 
 // GetServiceAccount returns a Kubernetes service account resource in the provided namespace with the given name. The

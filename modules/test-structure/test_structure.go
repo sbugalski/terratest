@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/files"
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/files"
+	"github.com/sbugalski/terratest/modules/logger"
 )
 
 // SKIP_STAGE_ENV_VAR_PREFIX is the prefix used for skipping stage environment variables.

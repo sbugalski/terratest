@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/customerrors"
-	"github.com/gruntwork-io/terratest/modules/files"
-	"github.com/gruntwork-io/terratest/modules/ssh"
+	"github.com/sbugalski/terratest/modules/customerrors"
+	"github.com/sbugalski/terratest/modules/files"
+	"github.com/sbugalski/terratest/modules/ssh"
 )
 
 type RemoteFileSpecification struct {

@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gruntwork-io/gruntwork-cli/files"
-	"github.com/gruntwork-io/terratest/modules/random"
+	"github.com/sbugalski/gruntwork-cli/files"
+	"github.com/sbugalski/terratest/modules/random"
 	"github.com/stretchr/testify/assert"
 )
 

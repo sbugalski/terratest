@@ -7,8 +7,8 @@ import (
 	"encoding/pem"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"golang.org/x/crypto/ssh"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/golang/crypto/ssh"
 )
 
 // KeyPair is a public and private key pair that can be used for SSH access.

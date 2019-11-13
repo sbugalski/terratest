@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terratest
+module github.com/sbugalski/terratest
 
 go 1.13
 
@@ -21,7 +21,7 @@ require (
 	github.com/google/uuid v0.0.0-20161128191214-064e2069ce9c
 	github.com/googleapis/gnostic v0.3.1 // indirect
 	github.com/gregjones/httpcache v0.0.0-20190611155906-901d90724c79 // indirect
-	github.com/gruntwork-io/gruntwork-cli v0.5.1
+	github.com/sbugalski/gruntwork-cli v0.5.1
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
 	github.com/imdario/mergo v0.3.7 // indirect
 	github.com/json-iterator/go v1.1.7 // indirect

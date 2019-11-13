@@ -21,7 +21,7 @@ import (
 	"k8s.io/client-go/tools/portforward"
 	"k8s.io/client-go/transport/spdy"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/logger"
 )
 
 // Global lock to synchronize port selections

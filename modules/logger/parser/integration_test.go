@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/shell"
+	"github.com/sbugalski/terratest/modules/shell"
 	"github.com/stretchr/testify/assert"
 )
 

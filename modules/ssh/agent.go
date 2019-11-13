@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"golang.org/x/crypto/ssh/agent"
+	"github.com/golang/crypto/ssh/agent"
 )
 
 type SshAgent struct {
