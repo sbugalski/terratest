@@ -13,11 +13,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/terratest/modules/customerrors"
-	"github.com/gruntwork-io/terratest/modules/files"
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"golang.org/x/crypto/ssh"
-	"golang.org/x/crypto/ssh/agent"
+	"github.com/sbugalski/terratest/modules/customerrors"
+	"github.com/sbugalski/terratest/modules/files"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/golang/crypto/ssh"
+	"github.com/golang/crypto/ssh/agent"
 )
 
 // Host is a remote host.

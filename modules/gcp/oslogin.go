@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/logger"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/oauth2/google"
+	"github.com/golang/oauth2/google"
 	"google.golang.org/api/compute/v1"
 	"google.golang.org/api/oslogin/v1"
 )

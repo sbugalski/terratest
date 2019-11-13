@@ -9,8 +9,8 @@ import (
 	"github.com/aws/aws-sdk-go/service/autoscaling"
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"github.com/gruntwork-io/terratest/modules/retry"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/retry"
 )
 
 type AsgCapacityInfo struct {

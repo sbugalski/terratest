@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/require"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/gruntwork-io/terratest/modules/random"
+	"github.com/sbugalski/terratest/modules/random"
 )
 
 func TestNamespaces(t *testing.T) {

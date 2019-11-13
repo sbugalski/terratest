@@ -3,8 +3,8 @@ package docker
 import (
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"github.com/gruntwork-io/terratest/modules/shell"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/shell"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,7 +6,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/logger"
 	"github.com/oracle/oci-go-sdk/common"
 	"github.com/oracle/oci-go-sdk/core"
 )

@@ -1,4 +1,4 @@
-- repo: https://github.com/gruntwork-io/pre-commit
+- repo: https://github.com/sbugalski/pre-commit
   rev: v0.0.2
   hooks:
     - id: goimports

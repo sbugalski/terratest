@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gruntwork-io/terratest/modules/aws"
-	http_helper "github.com/gruntwork-io/terratest/modules/http-helper"
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"github.com/gruntwork-io/terratest/modules/packer"
-	"github.com/gruntwork-io/terratest/modules/random"
-	"github.com/gruntwork-io/terratest/modules/terraform"
-	test_structure "github.com/gruntwork-io/terratest/modules/test-structure"
+	"github.com/sbugalski/terratest/modules/aws"
+	http_helper "github.com/sbugalski/terratest/modules/http-helper"
+	"github.com/sbugalski/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/packer"
+	"github.com/sbugalski/terratest/modules/random"
+	"github.com/sbugalski/terratest/modules/terraform"
+	test_structure "github.com/sbugalski/terratest/modules/test-structure"
 )
 
 // This is a complicated, end-to-end integration test. It builds the AMI from examples/packer-docker-example,

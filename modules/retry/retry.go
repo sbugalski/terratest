@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/gruntwork-io/terratest/modules/logger"
-	"golang.org/x/net/context"
+	"github.com/golang/net/context"
+	"github.com/sbugalski/terratest/modules/logger"
 )
 
 // Either contains a result and potentially an error.

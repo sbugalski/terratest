@@ -8,7 +8,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/s3"
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
-	"github.com/gruntwork-io/terratest/modules/logger"
+	"github.com/sbugalski/terratest/modules/logger"
 	"github.com/stretchr/testify/require"
 )
 
